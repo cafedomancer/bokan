@@ -1,3 +1,3 @@
 # bokan
 
-inspired by @eatplaynap
+inspired by [@eatplaynap](https://github.com/eatplaynap)
