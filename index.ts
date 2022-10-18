@@ -14,9 +14,6 @@ client.on('interactionCreate', async (interaction) => {
     const channel = member.voice.channel
 
     if (time && channel) {
-      console.log(parse(time.toString().padStart(4, '0'), 'HHmm', new Date()))
-      console.log(new Date())
-
       setTimeout(() => {
         channel.members.forEach((member) => member.voice.disconnect())
       }, parse(time.toString().padStart(4, '0'), 'HHmm', new Date()).getTime() - new Date().getTime())
